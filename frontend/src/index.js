@@ -15,3 +15,33 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+function findSubstring(arr1,arr2) { 
+  let shortStr;
+  let longStr;
+  let result;
+  console.log("i\ta[i]\tb[i]\tcommon\tresult");
+  for(let j=0;j<array2.length;j++){
+      result="";
+      s1=array1[j];
+      s2=array2[j];
+  if(s1.length < s2.length){
+     shortStr = s1;
+     longStr = s2;
+   }else{
+     shortStr = s2;
+     longStr = s1;
+   }
+
+  for(let i = 0; i < shortStr.length; i++){
+     if(longStr.indexOf(shortStr[i]) !== -1){
+      result = result+shortStr[i];
+ }
+}
+if(result.length>0)
+console.log(j+"\t"+s1+"\t"+s2+"\t"+result+"\tYES");
+else
+console.log(j+"\t"+s1+"\t"+s2+"\t"+"\tNO");
+  }
+}    
