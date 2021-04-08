@@ -45,3 +45,20 @@ else
 console.log(j+"\t"+s1+"\t"+s2+"\t"+"\tNO");
   }
 }    
+
+function kangaroo(x1, v1, x2, v2) {
+  console.log(...arguments)
+  let kan1 = x1
+  let kan2 = x2
+  for (let i = 1; i < 20; i++) {
+    kan1 += v1
+    kan2 += v2
+    // console.log(kan1, kan2)
+    if (kan1 === kan2) {
+      console.log('YES')
+      return 'YES'
+    }
+  }
+  console.log('NO')
+  return 'NO'
+}
